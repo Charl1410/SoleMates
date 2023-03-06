@@ -1,0 +1,1 @@
+// define the data types for the content in the models
