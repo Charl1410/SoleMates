@@ -1,6 +1,4 @@
 const { Schema, model } = require('mongoose');
-
-const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const productSchema = new Schema({
@@ -21,7 +19,7 @@ const productSchema = new Schema({
     ref: 'Category',
   }],
   brand: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Brand',
     required: false
 },

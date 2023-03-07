@@ -22,4 +22,4 @@ const brandSchema = new Schema({
 
 const Brand = model('Brand', brandSchema);
 
-module.exports = Category;
+module.exports = Brand;

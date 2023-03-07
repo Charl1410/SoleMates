@@ -19,10 +19,11 @@ db.once('open', async () => {
 
     await User.create(userSeeds);
     await Category.create(categorySeeds);
+    await Brand.create(brandSeeds);
 
     for (let i = 0; i < productSeeds.length; i++) {
       const product = productSeeds[i];
-      const { _id, category } = await Product.create(product);
+      const { _id, categories } = await Product.create(product);
 
       const newBrand = await Brand.findOneAndUpdate(
         { name: brand },
@@ -33,9 +34,9 @@ db.once('open', async () => {
         }
       );
 
-      for (let j = 0; j < productSeeds.length; j++) {
+      for (let j = 0; j < categorySeeds.length; j++) {
         const newCategory = await Category.findOneAndUpdate(
-          { name: category[j] },
+          { name: categories[j] },
           {
             $addToSet: {
               products: _id,
@@ -44,14 +45,6 @@ db.once('open', async () => {
         );
       }
 
-      const user = await Category.findOneAndUpdate(
-        { name: category },
-        {
-          $addToSet: {
-            products: _id,
-          },
-        }
-      );
     }
 
   } catch (err) {
