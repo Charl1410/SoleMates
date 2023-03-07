@@ -4,7 +4,7 @@
       "description": "",
       "image": "http://via.placeholder.com/640x360",
       "price": 1200,
-      "category": "Trainers, For Him",
+      "categories": ["Trainers","For Him"],
       "brand":"Nike"
     },
     {
@@ -12,7 +12,7 @@
       "description": "",
       "image": "http://via.placeholder.com/640x360",
       "price": 2500,
-      "category": "Boots",
+      "categories": ["Boots","For Him"],
       "brand":"Timbaland"
     },
     {
@@ -20,7 +20,7 @@
       "description": "",
       "image": "http://via.placeholder.com/640x360",
       "price": 1400,
-      "category": "Trainers",
+      "categories": ["Trainers"],
       "brand":"Nike"
     },
     {
@@ -28,7 +28,7 @@
       "description": "",
       "image": "http://via.placeholder.com/640x360",
       "price": 145,
-      "category": "Boots, For Her",
+      "categories": ["Boots", "For Her"],
       "brand":"Vagabond"
     }
   ]
