@@ -1,11 +1,22 @@
-import './App.css';
+import React from "react";
+import Card from "./components/Card"
+import Hero from "./components/Hero"
+import Footer from "./components/Footer"
+import Nav from "./components/Nav"
+import "./App"
 
-function App() {
+export default function App() {
   return (
-  <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  );
-}
+    <>
+      <Nav />
+      <Hero />
+      <Card />
+      <Footer />
+  
 
-export default App;
+    </>
+
+
+
+  )
+}
