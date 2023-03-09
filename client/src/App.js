@@ -60,20 +60,32 @@
 // }
 
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Card from "./components/Card"
 import Hero from "./components/Hero"
 import Footer from "./components/Footer"
 import Nav from "./components/Nav"
-// import Browse from "./pages/Browse"
+import Browser from "./pages/Browser"
 import "./App"
 
 export default function App() {
   return (
     <>
-  <Nav />
-  <Hero />
-  <Footer />
-  <Card />
+ <Router>
+
+         <Routes>
+           <Route
+             path="/"
+             element={<Hero />}
+           />
+           <Route
+             path="/me"
+             element={<Browser />}
+           />
+         </Routes>
+
+     </Router>
     </>
   )
 }

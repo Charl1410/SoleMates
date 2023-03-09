@@ -3,12 +3,8 @@ import Card from '../components/Card'
 import { useQuery } from '@apollo/client';
 import { QUERY_FEATURED_PRODUCTS } from '../utils/queries';
 
-import { useCart } from '../context/CartContext'
-
-const Home = () => {
+const Browser = () => {
     
-  
-    const { onAddToCart } = useCart()
   
     const { loading, data } = useQuery(QUERY_FEATURED_PRODUCTS);
     const products = data?.products || [];
@@ -18,7 +14,7 @@ const Home = () => {
         <div className='w-75 border m-2 p-5'>
           <div className='section-title'>
             {products.map(product => (
-              <Card key={product.title} {...product} onAddToCart={()=>onAddToCart(product)} />
+              <Card key={product.title} {...product} />
             ))}
           </div>
         </div>  
@@ -26,4 +22,4 @@ const Home = () => {
     )
             }
 
-export default Home
+export default Browser

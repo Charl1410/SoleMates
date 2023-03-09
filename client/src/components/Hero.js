@@ -9,7 +9,7 @@ export default function Hero () {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Sole Mates</h1>
       <p className="mb-5">Welcome to Soul Mates where you can buy all your favourite brands </p>
-      <button className="btn btn-secondary">Get Started</button>
+      <button className="btn btn-secondary animate-bounce">Get Started</button>
     </div>
   </div>
 </div>
