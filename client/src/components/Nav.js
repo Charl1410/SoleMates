@@ -21,7 +21,7 @@ export default function Nav () {
                   <li><a>Submenu 2</a></li>
                 </ul>
               </li>
-              <li><a>Item 3</a></li>
+              <li><a>Item 3</a></li>  
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
