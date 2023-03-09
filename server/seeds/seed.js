@@ -5,9 +5,6 @@ const categorySeeds = require('./categories.json');
 const brandSeeds = require('./brands.json');
 const productSeeds = require('./products.json');
 
-// TODO: add seed for orders
-//const orderSeeds = require('./orderSeeds.json');
-
 db.once('open', async () => {
   try {
     await Category.deleteMany({});
@@ -15,37 +12,55 @@ db.once('open', async () => {
     await Product.deleteMany({});
     await Order.deleteMany({});
     await Brand.deleteMany({});
-    
 
     await User.create(userSeeds);
     await Category.create(categorySeeds);
     await Brand.create(brandSeeds);
 
+    let createdProduct;
     for (let i = 0; i < productSeeds.length; i++) {
       const product = productSeeds[i];
-      const { _id, categories } = await Product.create(product);
-
-      const newBrand = await Brand.findOneAndUpdate(
-        { name: brand },
-        {
-          $addToSet: {
-            products: _id,
-          },
-        }
-      );
-
-      for (let j = 0; j < categorySeeds.length; j++) {
+    
+      // Retrieve the ObjectIds of the categories based on their names
+      const categoryIds = [];
+      for (let j = 0; j < product.categories.length; j++) {
+        const category = await Category.findOne({ name: product.categories[j] });
+        categoryIds.push(category._id);
+      }
+    
+      // Retrieve the ObjectId of the brand based on its name
+      const brand = await Brand.findOne({ name: product.brand });
+    
+      // Create the product using the retrieved categoryIds and brand._id
+      createdProduct = await Product.create({
+        ...product,
+        categories: categoryIds,
+        brand: brand._id,
+      });
+    
+      // Add the created product to each category
+      for (let j = 0; j < product.categories.length; j++) {
         const newCategory = await Category.findOneAndUpdate(
-          { name: categories[j] },
+          { name: product.categories[j] },
           {
             $addToSet: {
-              products: _id,
+              products: createdProduct._id,
             },
           }
         );
       }
+    }    
 
-    }
+    for (let j = 0; j < categorySeeds.length; j++) {
+      const newCategory = await Category.findOneAndUpdate(
+        { name: categorySeeds[j].name }, // use the name property of the object
+        {
+          $addToSet: {
+            products: createdProduct._id,
+          },
+        }
+      );
+    }    
 
   } catch (err) {
     console.error(err);
