@@ -1,4 +1,4 @@
-import ProductCard from '../components/Card'
+import Card from '../components/Card'
 
 import { useQuery } from '@apollo/client';
 import { QUERY_FEATURED_PRODUCTS } from '../utils/queries';
@@ -18,7 +18,7 @@ const Home = () => {
         <div className='w-75 border m-2 p-5'>
           <div className='section-title'>
             {products.map(product => (
-              <ProductCard key={product.title} {...product} onAddToCart={()=>onAddToCart(product)} />
+              <Card key={product.title} {...product} onAddToCart={()=>onAddToCart(product)} />
             ))}
           </div>
         </div>  

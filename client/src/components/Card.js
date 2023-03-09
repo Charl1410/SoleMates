@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 
-const ProductCard = ( props ) => {
+const Card = ( props ) => {
 
   console.log(props)
   const {title, description, image, price, onAddToCart} = props;
@@ -27,4 +27,4 @@ const ProductCard = ( props ) => {
       )
 }
 
-export default ProductCard
+export default Card
