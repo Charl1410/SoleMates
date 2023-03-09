@@ -1,6 +1,4 @@
 const { Schema, model } = require('mongoose');
-
-const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const productSchema = new Schema({
@@ -16,11 +14,15 @@ const productSchema = new Schema({
     required: true,
     trim: true,
   },
-  category: {
-    type: String,
-    required: true,
-    trim: true,
-  },
+  categories: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Category',
+  }],
+  brand: {
+    type: Schema.Types.ObjectId,
+    ref: 'Brand',
+    required: false
+},
   image: {
     type: String,
     required: true,
