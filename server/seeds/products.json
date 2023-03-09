@@ -1,0 +1,35 @@
+[
+    {
+      "title": "Jordan 1 Retro High OG SP",
+      "description": "2",
+      "image": "http://via.placeholder.com/640x360",
+      "price": 1200,
+      "categories": ["Trainers","For Him"],
+      "brand":"Nike"
+    },
+    {
+      "title": "Timbaland Boots",
+      "description": "2",
+      "image": "http://via.placeholder.com/640x360",
+      "price": 2500,
+      "categories": ["Boots","For Him"],
+      "brand":"Timbaland"
+    },
+    {
+      "title": "Nike Air Force 1",
+      "description": "2",
+      "image": "http://via.placeholder.com/640x360",
+      "price": 1400,
+      "categories": ["Trainers"],
+      "brand":"Nike"
+    },
+    {
+      "title": "Ansie Boots",
+      "description": "2",
+      "image": "http://via.placeholder.com/640x360",
+      "price": 145,
+      "categories": ["Boots", "For Her"],
+      "brand":"Vagabond"
+    }
+  ]
+  
