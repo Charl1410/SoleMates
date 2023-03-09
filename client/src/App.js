@@ -12,9 +12,7 @@ export default function App() {
     <>
       <Nav />
       <Hero />
-      <Card />
       <Footer />
-      <LoginPage />
   
 
     </>
