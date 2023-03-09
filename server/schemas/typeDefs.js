@@ -20,6 +20,13 @@ const typeDefs = gql`
         createdAt: String
     }
 
+    type Brand {
+        _id: ID
+        name: String
+        createdAt: String
+        products: [Product]!
+    }
+
     type Category{
         _id: ID
         name: String
@@ -51,6 +58,8 @@ const typeDefs = gql`
         product(title:String!): Product
         orders: [Order]
         order(orderId: ID!): Order
+        brands: [Brand]
+        brand: [brandId: ID!]: Brand
     }
 
     type Mutation{
