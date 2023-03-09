@@ -64,13 +64,16 @@ import Card from "./components/Card"
 import Hero from "./components/Hero"
 import Footer from "./components/Footer"
 import Nav from "./components/Nav"
-import Browse from "./pages/Browse"
+// import Browse from "./pages/Browse"
 import "./App"
 
 export default function App() {
   return (
     <>
-<Browse />
+  <Nav />
+  <Hero />
+  <Footer />
+  <Card />
     </>
   )
 }
