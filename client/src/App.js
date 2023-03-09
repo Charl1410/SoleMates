@@ -10,10 +10,8 @@ import "./App"
 export default function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <Footer />
-  
+      <LoginPage />
+      
     </>
 
 
