@@ -57,7 +57,9 @@ export default function Nav () {
           <span className="font-bold text-lg">8 Items</span>
           <span className="text-info">Subtotal: $999</span>
           <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
+            <a href="/basket">
+            <button className="btn btn-primary btn-block">View Basket</button>
+            </a>
           </div>
         </div>
       </div>

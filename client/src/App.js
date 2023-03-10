@@ -8,8 +8,10 @@ import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/Layout";
+import Home from "./pages/Home";
 import Browse from "./pages/Browse";
 import Product from './pages/Product';
+import Basket from './pages/Basket';
 import Checkout from "./pages/Checkout";
 import "./App";
 
@@ -43,7 +45,9 @@ export default function App() {
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<Browse />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/browse" element={<Browse />} />
+            <Route path="/basket" element={<Basket />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route
                 path="/product/:productId"

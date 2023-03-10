@@ -1,5 +1,6 @@
 import Nav from "./Nav"
 import Footer from "./Footer"
+import Hero from "./Hero"
 
 
 const Layout = ({ children }) => {
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className="wrapper">
       <Nav />
+
       <div className="container">
         {children}
       </div>
