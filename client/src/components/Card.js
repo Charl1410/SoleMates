@@ -4,10 +4,9 @@ import React from 'react';
 const Card = ( props ) => {
 
   console.log(props)
-  const {title, description, image, price, onAddToCart} = props;
+  const {title, description, image, price} = props;
 
   return (
-        
   <div className="card w-96 bg-base-100 shadow-xl">
     <figure><img src={`${image}`} alt={title} /></figure>
     <div className="card-body">
@@ -17,7 +16,7 @@ const Card = ( props ) => {
       </h2>
       <p>{description}</p>
       <div className="card-actions justify-end">
-      <button className="btn btn-primary"onClick={onAddToCart}>Add to Cart</button>
+      <button className="btn btn-primary">Add to Cart</button>
         <div className="badge badge-outline">£{price}</div> 
         <div className="badge badge-outline">Products</div>
       </div>
