@@ -59,7 +59,7 @@ const typeDefs = gql`
         orders: [Order]
         order(orderId: ID!): Order
         brands: [Brand]
-        brand: [brandId: ID!]: Brand
+        brand(brandId: ID!): Brand
     }
 
     type Mutation{
