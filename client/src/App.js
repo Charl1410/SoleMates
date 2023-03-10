@@ -13,6 +13,7 @@ import Browse from "./pages/Browse";
 import Product from './pages/Product';
 import Basket from './pages/Basket';
 import Checkout from "./pages/Checkout";
+import Login from "./pages/LoginPage"
 import "./App";
 
 
@@ -48,6 +49,7 @@ export default function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/browse" element={<Browse />} />
             <Route path="/basket" element={<Basket />} />
             <Route path="/checkout" element={<Checkout />} />
