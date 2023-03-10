@@ -28,7 +28,8 @@ export default function Nav () {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
+
+          <li><a href="/login">Log In</a></li>
           <li tabIndex={0}>
             <a>
               Parent
