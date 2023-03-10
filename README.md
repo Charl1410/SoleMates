@@ -1,4 +1,4 @@
-# SoulMates 
+# SoleMates 
 
  ## Table of contents
 
