@@ -11,7 +11,7 @@ const Browse = () => {
   // const { onAddToCart } = useCart()
   const { loading, data } = useQuery(QUERY_FEATURED_PRODUCTS);
   const products = data?.products || [];
-
+  console.log("data:",data); // add this line to log the data
 
   // onAddToCart={()=>onAddToCart(product)}
 
