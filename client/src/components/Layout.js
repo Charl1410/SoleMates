@@ -1,15 +1,13 @@
 import Nav from "./Nav"
 import Footer from "./Footer"
-import Hero from "./Hero"
-
 
 const Layout = ({ children }) => {
 
   return (
-    <div className="wrapper">
+    <div>
       <Nav />
 
-      <div className="container">
+      <div>
         {children}
       </div>
       <Footer />
