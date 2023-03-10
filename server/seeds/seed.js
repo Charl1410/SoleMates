@@ -7,12 +7,14 @@ const productSeeds = require('./products.json');
 
 db.once('open', async () => {
   try {
+    // delete all existing documents from collections
     await Category.deleteMany({});
     await User.deleteMany({});
     await Product.deleteMany({});
     await Order.deleteMany({});
     await Brand.deleteMany({});
 
+    // create documents using the seeds data
     await User.create(userSeeds);
     await Category.create(categorySeeds);
     await Brand.create(brandSeeds);
@@ -61,6 +63,12 @@ db.once('open', async () => {
         }
       );
     }    
+
+    // start the server
+    app.listen(PORT, () => {
+      console.log(`API server running on port ${PORT}!`);
+      console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+    });
 
   } catch (err) {
     console.error(err);

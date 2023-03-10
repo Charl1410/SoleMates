@@ -8,8 +8,10 @@ export default function Hero () {
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Sole Mates</h1>
-      <p className="mb-5">Welcome to Soul Mates where you can buy all your favourite brands </p>
-      <button className="btn btn-secondary animate-bounce">Get Started</button>
+      <p className="mb-5">Welcome to Sole Mates where you can buy all your favourite brands </p>
+      <a href="/browse">
+        <button className="btn btn-secondary animate-bounce">Browse All</button>
+      </a>
     </div>
   </div>
 </div>

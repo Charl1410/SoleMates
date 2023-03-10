@@ -24,7 +24,7 @@ export default function Nav () {
               <li><a>Item 3</a></li>  
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-xl" href='/'>SOLE MATES</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -57,7 +57,9 @@ export default function Nav () {
           <span className="font-bold text-lg">8 Items</span>
           <span className="text-info">Subtotal: $999</span>
           <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
+            <a href="/basket">
+            <button className="btn btn-primary btn-block">View Basket</button>
+            </a>
           </div>
         </div>
       </div>
