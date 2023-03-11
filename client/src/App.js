@@ -13,12 +13,14 @@ import Browse from "./pages/Browse";
 import Product from './pages/Product';
 import Basket from './pages/Basket';
 import Checkout from "./pages/Checkout";
+import Login from './pages/LoginPage';
+import Signup from './pages/Signup';
 import "./App";
 
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "http://localhost:3001/graphql",
 });
 
 
@@ -38,6 +40,7 @@ const authLink = setContext((_, { headers }) => {
 const client = new ApolloClient({
   // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
   link: authLink.concat(httpLink),
+  uri: 'http://localhost:3001/graphql',
   cache: new InMemoryCache(),
 });
 
@@ -51,6 +54,8 @@ export default function App() {
             <Route path="/browse" element={<Browse />} />
             <Route path="/basket" element={<Basket />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
             <Route
                 path="/product/:productId"
                 element={<Product />}

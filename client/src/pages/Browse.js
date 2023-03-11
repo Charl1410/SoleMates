@@ -12,7 +12,6 @@ const Browse = () => {
   const { loading, data } = useQuery(QUERY_FEATURED_PRODUCTS);
   const products = data?.products || [];
 
-
   // onAddToCart={()=>onAddToCart(product)}
 
   return (
