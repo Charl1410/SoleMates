@@ -15,6 +15,8 @@ const Card = ( props ) => {
         {title}</Link>
         {/* this NEW badge can be used for homepage cards that are generated to show the newest products */}
         <div className="badge badge-secondary">NEW</div>
+      <h2 className="card-title">
+        {title}
       </h2>
       <div className="card-actions justify-end">
       <button className="btn btn-primary " onClick={onAddToCart} >Add to Cart</button>
