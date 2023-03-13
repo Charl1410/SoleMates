@@ -38,6 +38,10 @@ export default function Nav () {
             <ul className="p-2 bg-white">
               <li ><a>Timberlands</a></li>
               <li><a>Nike</a></li>
+              <li><a>Adidas</a></li>
+              <li><a>Jordans</a></li>
+
+
             </ul>
           </li>
           <li><a>Item 3</a></li>
