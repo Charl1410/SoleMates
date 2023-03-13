@@ -17,6 +17,7 @@ const Card = ( props ) => {
         <div className="badge badge-secondary">NEW</div>
       </h2>
       <div className="card-actions justify-end">
+        {/* Add on click here */}
       <button className="btn btn-primary ">Add to Cart</button>
         <div className="badge badge-outline">£{price}</div> 
       </div>
