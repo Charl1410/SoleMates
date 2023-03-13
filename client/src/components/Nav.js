@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Nav () {
@@ -29,13 +30,13 @@ export default function Nav () {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
 
-          <li><a href="/login">Log In</a></li>
+          <li><Link to="/login">Log In</Link></li>
           <li tabIndex={0}>
             <a>
               Shop Brands
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
             </a>
-            <ul className="p-2 bg-white">
+            <ul className="p-2 bg-white z-10">
               <li ><a>Timberlands</a></li>
               <li><a>Nike</a></li>
               <li><a>Adidas</a></li>
@@ -61,9 +62,9 @@ export default function Nav () {
               <span className="font-bold text-lg">X items</span>
               <span className="text-info">Subtotal:</span>
               <div className="card-actions">
-                <a href="/basket">
+                <Link to ="/basket">
                 <button className="btn btn-primary btn-block">View Basket</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Card = ( props ) => {
-
-  console.log(props)
   const {title, image, price, _id, onAddToCart} = props;
 
   return (
