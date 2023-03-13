@@ -1,9 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 
-const Card = ( props ) => {
-
-  console.log(props)
+const newCards = ( props ) => {
   const {title, image, price} = props;
 
   return (
@@ -12,6 +10,7 @@ const Card = ( props ) => {
     <div className="card-body">
       <h2 className="card-title">
         {title}
+        <div className="badge badge-secondary">NEW</div>
       </h2>
       <div className="card-actions justify-end">
       <button className="btn btn-primary">Add to Cart</button>
@@ -23,4 +22,4 @@ const Card = ( props ) => {
       )
 }
 
-export default Card
+export default newCards
