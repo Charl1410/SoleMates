@@ -7,10 +7,7 @@ import { QUERY_SINGLE_PRODUCT } from '../utils/queries';
 
 const Product = () => {
 
-  const params = useParams();
   const { productId } = useParams();
-
-  console.log('params: ', params)
 
   const { loading, data } = useQuery(QUERY_SINGLE_PRODUCT, {
     // pass URL parameter
@@ -19,8 +16,6 @@ const Product = () => {
 
   const product = data?.product || {};
   const productTitle = loading ? 'Loading Product...' : data?.product.title;
-  console.log(`productID:', ${productId}`)
-  console.log(`data:', ${data}`)
 
   return (
     <>
