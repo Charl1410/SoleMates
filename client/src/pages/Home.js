@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <h1>Newest Products</h1>
-      <div className='section-title'>
+      <h1 class="text-4xl font-extrabold dark:text-white text-center m-5" >Newest Products</h1>
+      <div className='section-title flex flex-wrap justify-evenly	'>
         {featuredProducts.map(product => (
           <NewCards key={product.title} {...product} />
         ))}
