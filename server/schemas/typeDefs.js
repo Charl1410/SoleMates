@@ -59,7 +59,7 @@ const typeDefs = gql`
         orders: [Order]
         order(orderId: ID!): Order
         brands: [Brand]
-        brand: [brandId: ID!]: Brand
+        brand(brandId: ID!): Brand
     }
 
     type Mutation{
@@ -68,5 +68,4 @@ const typeDefs = gql`
         newOrder(customerName: String!, customerAddress:String!, items:String ,total:Int!): Order
     }
 `
-
 module.exports = typeDefs;

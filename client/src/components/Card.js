@@ -1,25 +1,28 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 
+const Card = ( props ) => {
 
-export default function Card () {
-    return (
-    
-        <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="http://i1.adis.ws/i/truworths/prod3066641_1.jpeg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">
-      Shoes!
-      <div className="badge badge-secondary">NEW</div>
-    </h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-    <button className="btn btn-primary">Buy Now</button>
-      <div className="badge badge-outline">Fashion</div> 
-      <div className="badge badge-outline">Products</div>
+  console.log(props)
+  const {title, image, price} = props;
+
+  return (
+  <div className="card w-96 bg-base-100 shadow-xl">
+    <figure><img src={`${image}`} alt={title} /></figure>
+    <div className="card-body">
+      <h2 className="card-title">
+        {title}
+        {/* this NEW badge can be used for homepage cards that are generated to show the newest products */}
+        <div className="badge badge-secondary">NEW</div>
+      </h2>
+      <div className="card-actions justify-end">
+      <button className="btn btn-primary">Add to Cart</button>
+        <div className="badge badge-outline">£{price}</div> 
+      </div>
     </div>
-  </div>
 </div>
 
       )
-
 }
+
+export default Card
