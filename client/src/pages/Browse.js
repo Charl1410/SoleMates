@@ -17,7 +17,7 @@ const Browse = () => {
   return (
     <>
       <div className='w-75 border m-2 p-5'>
-        <div className='section-title'>
+        <div className='section-title flex flex-wrap'>
           {products.map(product => (
             <Card key={product.title} {...product} />
           ))}

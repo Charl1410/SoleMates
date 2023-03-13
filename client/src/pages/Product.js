@@ -25,7 +25,7 @@ const Product = () => {
     <>
       <div className='p-5 m-2 border w-75'>
         <h1>{productTitle}</h1>
-        <div className='section-title'>
+        <div className='section-title '>
 
           <Card key={product.title} {...product} />
 
