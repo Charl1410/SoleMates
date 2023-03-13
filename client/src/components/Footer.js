@@ -17,7 +17,7 @@ export default function Footer() {
     </div>
   </div> 
   <div>
-    <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    <p>Copyright © 2023 - All right reserved by Team BBQ chicken</p>
   </div>
 </footer>
   );
