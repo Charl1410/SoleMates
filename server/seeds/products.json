@@ -30,6 +30,30 @@
       "price": 145,
       "categories": ["Boots", "For Her"],
       "brand":"Vagabond"
+    },
+    {
+      "title": "Adidas Originals Gazelle",
+      "description": "2",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/61f87dec481e4512823ea7fb0080ba1a_9366/Gazelle_Shoes_Black_BB5476_01_standard.jpg",
+      "price": 65,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Adidas"
+    },
+    {
+      "title": "Adidas Originals NMD_R1 ",
+      "description": "2",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d44fa06fc83f4644b7e8acbc01160e1b_9366/NMD_R1_Primeblue_Shoes_Black_GZ9258_01_standard.jpg",
+      "price": 89,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Adidas"
+    },
+    {
+      "title": "Nike Sliders",
+      "description": "2",
+      "image": "https://d2ob0iztsaxy5v.cloudfront.net/product/260066/2600667260m1_zm.jpg",
+      "price": 30,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Nike"
     }
   ]
   
