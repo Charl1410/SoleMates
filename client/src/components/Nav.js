@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Nav () {
@@ -81,9 +82,9 @@ export default function Nav () {
               <span className="font-bold text-lg">X items</span>
               <span className="text-info">Subtotal:</span>
               <div className="card-actions">
-                <a href="/basket">
+                <Link to="/basket">
                 <button className="btn btn-primary btn-block">View Basket</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

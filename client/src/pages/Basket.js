@@ -1,5 +1,6 @@
 // UI Components
 import BasketCard from '../components/BasketCard.js'
+import CheckoutLinks from '../components/CheckoutLinks'
 
 // Shopping Cart
 import { useCart } from '../context/CartContext'
@@ -9,7 +10,7 @@ const Basket = () => {
   const { cartItems, onRemoveFromCart } = useCart()
   console.log(cartItems)
 
-  // const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+  const total = cartItems.reduce((acc, item) => acc + item.price, 0);
   
   return (
     <>
@@ -24,7 +25,7 @@ const Basket = () => {
         <div className='section-title'>
             Checkout Options
         </div>
-        
+        <CheckoutLinks total={total} />
       </div>
     </>
   )
