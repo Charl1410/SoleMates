@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Nav () {
     return (
-        <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 z-20" style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -49,14 +49,14 @@ export default function Nav () {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
 
-          <li><Link to="/login">Log In</Link></li>
+          <li><a href="/login">Log In</a></li>
           <li tabIndex={0}>
             <a>
               Shop Brands
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
             </a>
             <ul className="p-2 bg-white z-10">
-              <li ><a>Timberlands</a></li>
+              <li ><a>Timberland</a></li>
               <li><a>Nike</a></li>
               <li><a>Adidas</a></li>
               <li><a>Jordans</a></li>
@@ -75,7 +75,7 @@ export default function Nav () {
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
             </a>
             <ul className="p-2 bg-white z-10">
-              <li ><a>Boots</a></li>
+              <li><a>Boots</a></li>
               <li><a>Trainers</a></li>
               <li><a>Slippers</a></li>
               <li><a>For Him</a></li>
@@ -98,7 +98,7 @@ export default function Nav () {
               <span className="font-bold text-lg">X items</span>
               <span className="text-info">Subtotal:</span>
               <div className="card-actions">
-                <Link to ="/basket">
+                <Link to="/basket">
                 <button className="btn btn-primary btn-block">View Basket</button>
                 </Link>
               </div>

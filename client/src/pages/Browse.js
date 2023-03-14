@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Card from "../components/Card";
 import { useQuery } from "@apollo/client";
 import { QUERY_FEATURED_PRODUCTS } from "../utils/queries";
@@ -9,6 +10,10 @@ const Browse = () => {
   const { onAddToCart } = useCart()
   const { loading, data } = useQuery(QUERY_FEATURED_PRODUCTS);
   const products = data?.products || [];
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top of the page
+  }, []);
 
   return (
     <>
