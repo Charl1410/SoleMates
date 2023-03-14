@@ -6,7 +6,6 @@ const BasketCard = (props) => {
 
     return (
     <>
-        <h1 class="text-4xl font-extrabold dark:text-white text-center m-5" >Your Basket</h1>
 
         <div className="card card-side bg-base-100 shadow-xl m-5">
         <figure><img src={`${image}`} alt={title} class="w-96"/></figure>
