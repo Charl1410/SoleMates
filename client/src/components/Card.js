@@ -8,7 +8,9 @@ const Card = ( props ) => {
     <div className="card w-96 bg-base-100 shadow-xl m-5 w-80">
       <Link to={`/product/${_id}`}>
         <figure>
-          <img src={`${image}`} alt={title} />
+            <div className='image-container w-full h-full'>
+            <img src={`${image}`} alt={title} />
+            </div>
         </figure>
       </Link>
       <div className="card-body flex flex-col justify-center items-center text-center">
