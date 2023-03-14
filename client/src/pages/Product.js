@@ -19,7 +19,7 @@ const Product = () => {
 
   return (
     <>
-      <div className='p-5 m-2 border w-75'>
+      <div className='p-5 m-2 mt-10 border w-75'>
         <h1>{productTitle}</h1>
         <div className='section-title '>
           <SingleProduct
