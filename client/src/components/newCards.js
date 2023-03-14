@@ -5,7 +5,7 @@ const newCards = ( props ) => {
   const {title, image, price, _id, onAddToCart} = props;
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl m-5 w-80 transition duration-500 hover:scale-125 ">
+   <div className="card w-96 bg-base-100 shadow-xl m-5 w-80 transition duration-500 hover:scale-125 ">
       <Link to={`/product/${_id}`}>
         <figure>
           <img src={`${image}`} alt={title} />

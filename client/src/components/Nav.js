@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 export default function Nav () {
@@ -11,15 +10,18 @@ export default function Nav () {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Item 1</a></li>
+            <li><a>Log In</a></li>
             <li tabIndex={0}>
               <a className="justify-between">
-                Parent
+                Shop Brands
                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
               </a>
               <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><a>Timberlands</a></li>
+                <li><a>Nike</a></li>
+                <li><a>Adidas</a></li>
+                <li><a>Jordans</a></li>
+
               </ul>
             </li>
             <li><a>Item 3</a></li>
@@ -30,22 +32,39 @@ export default function Nav () {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
 
-          <li><Link to="/login">Log In</Link></li>
+          <li><a href="/login">Log In</a></li>
           <li tabIndex={0}>
             <a>
               Shop Brands
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
             </a>
             <ul className="p-2 bg-white z-10">
-              <li ><a>Timberlands</a></li>
+              <li ><a>Timberland</a></li>
               <li><a>Nike</a></li>
               <li><a>Adidas</a></li>
               <li><a>Jordans</a></li>
+              <li><a>New Balance</a></li>
+              <li><a>UGG</a></li>
+              <li><a>Vagabond</a></li>
+              <li><a>Veja</a></li>
 
 
             </ul>
           </li>
-          <li><a>Item 3</a></li>
+
+          <li tabIndex={0}>
+            <a>
+              Shop Category
+              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+            </a>
+            <ul className="p-2 bg-white z-10">
+              <li ><a>Boots</a></li>
+              <li><a>Trainers</a></li>
+              <li><a>Slippers</a></li>
+              <li><a>For Him</a></li>
+              <li><a>For Her</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
 
@@ -62,9 +81,9 @@ export default function Nav () {
               <span className="font-bold text-lg">X items</span>
               <span className="text-info">Subtotal:</span>
               <div className="card-actions">
-                <Link to ="/basket">
+                <a href="/basket">
                 <button className="btn btn-primary btn-block">View Basket</button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
