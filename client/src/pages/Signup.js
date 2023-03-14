@@ -3,7 +3,7 @@ import Signup from '../components/SignupComp'
 
 export default function SignupPage() {
   return (
-    <div className>
+    <div className='mt-10'>
       
         <Signup />
       
