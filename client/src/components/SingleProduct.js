@@ -7,7 +7,7 @@ const SingleProduct = ({ title, image, description, price }) => {
       <h2 className="text-4xl font-extrabold dark:text-white text-center m-5">{title}</h2>
       <p className='m-2'>{description}</p>
       <p className='m-2'>Price: £{price}</p>
-      <button className="btn btn-primary m-4" >
+      <button className="btn btn-primary m-4">
             Add to Cart please 
           </button>
     </div>
