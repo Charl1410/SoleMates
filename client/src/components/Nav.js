@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Nav () {
     return (
-        <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 z-20" style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
