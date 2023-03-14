@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { Pluralize } from '../utils/textulize';
 
 export default function Nav () {
   const { cartItems } = useCart();
@@ -97,7 +98,7 @@ export default function Nav () {
           </label>
           <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
             <div className="card-body">
-              <span className="font-bold text-lg"> {cartItems.length} items</span>
+              <span className="font-bold text-lg"> {cartItems.length} {Pluralize(cartItems.length, 'item', 'items')}</span>
               <span className="text-info">Subtotal: £{total} </span>
               <div className="card-actions">
                 <Link to="/basket">
