@@ -23,6 +23,7 @@ const Basket = () => {
         <div className='w-75 border m-2 mt-10 p-5'>
         <h1 class="text-4xl font-extrabold dark:text-white text-center m-5" >Your Basket</h1>
 
+
           <div className='section-title'>
             {cartItems.map(product => (
               <BasketCard key={product.title} {...product} onRemoveFromCart={()=>onRemoveFromCart(product)} />
