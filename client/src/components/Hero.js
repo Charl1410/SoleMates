@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Hero () {
@@ -9,9 +10,9 @@ export default function Hero () {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Sole Mates</h1>
       <p className="mb-5">Welcome to Sole Mates where you can buy all your favourite brands </p>
-      <a href="/browse">
+      <Link to="/browse">
         <button className="btn btn-secondary animate-bounce">Browse All</button>
-      </a>
+      </Link>
     </div>
   </div>
 </div>
