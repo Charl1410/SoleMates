@@ -5,7 +5,7 @@ const Card = ( props ) => {
   const {title, image, price, _id, onAddToCart} = props;
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl m-5 w-80">
+    <div className="card w-96  bg-base-100 shadow-xl m-5 ">
       <Link to={`/product/${_id}`}>
         <figure>
             <div className='image-container w-full h-full'>

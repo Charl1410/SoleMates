@@ -19,20 +19,23 @@ const Basket = () => {
   
   return (
     <>
-      <div className='w-75 border m-2 p-5'>
-      <h1 className="text-4xl font-extrabold dark:text-white text-center m-5" >Your Basket</h1>
+    <div className="basket-page-container h-screen">
+        <div className='w-75 border m-2 mt-10 p-5'>
+        <h1 class="text-4xl font-extrabold dark:text-white text-center m-5" >Your Basket</h1>
 
-        <div className='section-title'>
-          {cartItems.map(product => (
-            <BasketCard key={product.title} {...product} onRemoveFromCart={()=>onRemoveFromCart(product)} />
-          ))}
+
+          <div className='section-title'>
+            {cartItems.map(product => (
+              <BasketCard key={product.title} {...product} onRemoveFromCart={()=>onRemoveFromCart(product)} />
+            ))}
+          </div>
+        </div>  
+        <div className='w-25 border m-2 p-5'>
+          <div className='section-title'>
+              Checkout Options
+          </div>
+          <CheckoutLinks total={total} />
         </div>
-      </div>  
-      <div className='w-25 border m-2 p-5'>
-        <div className='section-title'>
-            Checkout Options
-        </div>
-        <CheckoutLinks total={total} />
       </div>
     </>
   )
