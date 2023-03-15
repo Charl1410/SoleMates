@@ -14,7 +14,7 @@ import Browse from "./pages/Browse";
 import Product from "./pages/Product";
 import Basket from "./pages/Basket";
 import Checkout from "./pages/Checkout";
-import Login from "./pages/LoginPage";
+import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import "./App";
 

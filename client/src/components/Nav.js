@@ -18,9 +18,9 @@ export default function Nav () {
             <li tabIndex={0}>
               <a className="justify-between">
                 Shop Brands
-                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
               </a>
-              <ul className="p-2">
+              <ul className="p-2 bg-white z-10">
               <li ><a>Timberland</a></li>
               <li><a>Nike</a></li>
               <li><a>Adidas</a></li>
@@ -33,9 +33,9 @@ export default function Nav () {
             </li>
 
             <li tabIndex={0}>
-            <a>
+            <a className="justify-between">
               Shop Category
-              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
             </a>
             <ul className="p-2 bg-white z-10">
               <li ><a>Boots</a></li>
@@ -47,19 +47,21 @@ export default function Nav () {
           </li>         
            </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl" href='/'>SOLE MATES</a>
+        {/* Full sized navbar */}
+        <Link className="btn btn-ghost normal-case text-xl" to='/'>SOLE MATES</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
 
-          <li><a href="/login">Log In</a></li>
+          <li><Link to="/login">Log In</Link></li>
+          <li><Link to="/signup">Sign Up</Link></li>
           <li tabIndex={0}>
             <a>
               Shop Brands
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
             </a>
             <ul className="p-2 bg-white z-10">
-              <li ><a>Timberland</a></li>
+              <li><a>Timberland</a></li>
               <li><a>Nike</a></li>
               <li><a>Adidas</a></li>
               <li><a>Jordans</a></li>
