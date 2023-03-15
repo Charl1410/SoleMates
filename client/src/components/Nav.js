@@ -52,7 +52,6 @@ export default function Nav () {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
 
-          <li><a href="/login">Log In</a></li>
           <li tabIndex={0}>
             <a>
               Shop Brands
@@ -89,6 +88,9 @@ export default function Nav () {
       </div>
 
       <div className="navbar-end">
+        
+      <li><a href="/login">Log In</a></li>
+
 <div className="dropdown dropdown-end ">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <div className="indicator">
