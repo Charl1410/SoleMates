@@ -1,9 +1,13 @@
 const db = require('../config/connection');
 const { User, Product, Category, Order, Brand } = require('../models');
+const express = require('express');
+const app = express();
 const userSeeds = require('./users.json');
 const categorySeeds = require('./categories.json');
 const brandSeeds = require('./brands.json');
 const productSeeds = require('./products.json');
+
+const PORT = 3001;
 
 db.once('open', async () => {
   try {
@@ -32,6 +36,10 @@ db.once('open', async () => {
     
       // Retrieve the ObjectId of the brand based on its name
       const brand = await Brand.findOne({ name: product.brand });
+      if (!brand) {
+        throw new Error(`Brand not found: ${product.brand}`);
+      }
+      
     
       // Create the product using the retrieved categoryIds and brand._id
       createdProduct = await Product.create({
