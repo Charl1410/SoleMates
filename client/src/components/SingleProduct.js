@@ -10,7 +10,7 @@ const SingleProduct = ({ title, image, description, price, onAddToCart }) => {
       <p className='m-2'>{description}</p>
       <p className='m-2'>Price: £{price}</p>
       <button className="btn btn-primary m-4" onClick={onAddToCart}>
-            Add to Cart please 
+            Add to Cart
           </button>
     </div>
   );

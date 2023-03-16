@@ -70,6 +70,62 @@
       "price": 190,
       "categories": ["Boots", "For Him"],
       "brand":"Timberland"
+    },
+    {
+      "title": "Campo Chromefree Leather White Natural",
+      "description": "The bovine ChromeFree leather is smooth and light. Coming from farms located in the south of Brazil (Rio Grande do Sul), it undergoes an innovative tanning process where no chrome, heavy metals or dangerous acids are involved. By simplifying the tanning process, the use of chemicals and energy is limited, the use of water is reduced by about 40% and the use of salt by 80%. After tanning, the water is recyclable.",
+      "image": "https://www.veja-store.com/media/catalog/product/cache/527447f8cffec2edb3591f96240a2d24/C/P/CP052429_1_1.jpg",
+      "price": 140,
+      "categories": ["Trainers", "For Her", "For Him"],
+      "brand":"Veja"
+    },
+    {
+      "title": "Color Theory Old Skool Shoes",
+      "description": "The Color Theory Collection allows you to create a unique color story by pairing vibrant, unexpected hues with our iconic footwear silhouettes. Made with sturdy suede and canvas uppers, the Color Theory Old Skool honors our signature low top, Sidestripe™ shoe with eye-catching colorways ideal for the season. This timeless lace-up style also includes reinforced toe caps, supportive padded collars, and signature rubber waffle outsoles.",
+      "image": "https://images.vans.com/is/image/VansEU/VN0007NTH7O-HERO?wid=800&hei=800&fmt=jpg&qlt=85,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,1,0",
+      "price": 65,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Vans"
+    },
+    {
+      "title": "New Balance 9060 White with black and sea salt",
+      "description": "The 9060 is a new expression of the refined style and innovation-led design that have made the 99X series home to some of the most iconic models in New Balance history. The 9060 reinterprets familiar elements sourced from classic 99X models with a warped sensibility inspired by the proudly futuristic, visible tech aesthetic of the Y2K era. Sway bars, taken from the 990, are expanded and utilized throughout the entire upper for a sense of visible motion, while wavy lines and scaled up proportions on a sculpted pod midsole place an exaggerated emphasis on the familiar cushioning platforms of ABZORB and SBS.",
+      "image": "https://nb.scene7.com/is/image/NB/u9060aab_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600",
+      "price": 155,
+      "categories": ["Trainers", "For Him"],
+      "brand":"New Balance"
+    },
+    {
+      "title": "New Balance 530 White with Silver Metallic",
+      "description": "The 530 mens sneaker is a throwback to one of our classic running shoe styles. This casual kick combines everyday style with modern tech for a look and feel you'll love. ABZORB cushioning underfoot adds superior comfort. Put a retro spin on your step with the 530 mens sneaker.",
+      "image": "https://nb.scene7.com/is/image/NB/mr530ema_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600",
+      "price": 95,
+      "categories": ["Trainers", "For Him"],
+      "brand":"New Balance"
+    },
+    {
+      "title": "Campo Chromefree Leather White Black",
+      "description": "The bovine ChromeFree leather is smooth and light. Coming from farms located in the south of Brazil (Rio Grande do Sul), it undergoes an innovative tanning process where no chrome, heavy metals or dangerous acids are involved. By simplifying the tanning process, the use of chemicals and energy is limited, the use of water is reduced by about 40% and the use of salt by 80%. After tanning, the water is recyclable.",
+      "image": "https://www.veja-store.com/media/catalog/product/cache/527447f8cffec2edb3591f96240a2d24/v/e/veja_cp051537_lateral_1.jpg",
+      "price": 140,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Veja"
+    },
+    {
+      "title": "Classic Short II Boot",
+      "description": "Our Classic boot was originally worn by surfers to keep warm after early-morning sessions, and has since become iconic for its soft sheepskin and enduring design. The Classic II features two new updates: water resistance and a lightweight sole to increase cushioning, durability, and traction. These versatile boots pair well with practically anything, try loose boyfriend jeans and a velvet top.",
+      "image": "https://www.ugg.com/dw/image/v2/BCQW_PRD/on/demandware.static/-/Sites-UGG-EMEA-master/default/dw198d8482/images/gray/1016223-CHE_1.jpg?sw=1110&sh=1141&sm=fit&sfrm=jpg&bgcolor=f9f9f9",
+      "price": 175,
+      "categories": ["Boots", "For Her"],
+      "brand":"UGG"
+    },
+    {
+      "title": "Scuffette II Slipper",
+      "description": "This essential house slipper is cast in soft suede with plush wool lining. Pair with our cozy robes or matching cashmere sets for maximal leisure.",
+      "image": "https://www.ugg.com/dw/image/v2/BCQW_PRD/on/demandware.static/-/Sites-UGG-EMEA-master/default/dw11db6c3c/images/gray/1106872-CHE_1.jpg?sw=1110&sh=1141&sm=fit&sfrm=jpg&bgcolor=f9f9f9",
+      "price": 85,
+      "categories": ["Slippers", "For Her"],
+      "brand":"UGG"
     }
   ]
   
