@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 
 // Create our theme context using React.CreateContext()
 export const CartContext = React.createContext();
@@ -23,10 +23,19 @@ export default function CartProvider({ children }) {
     setCartItems(cartItems.filter(cartItem => cartItem.title !== item.title));
   };
 
+  const [cartTotal, setCartTotal] = useState({ items: 0, subtotal: 0 });
+
+  // Calculate the cart total whenever the cartItems state changes
+  useEffect(() => {
+    const items = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+    const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    setCartTotal({ items, subtotal });
+  }, [cartItems]);
+
   // The provider component will wrap all other components inside of it that need access to our global state
   return (
     // Dark theme and toggle theme are getting provided to the child components
-    <CartContext.Provider value={{ cartItems, onAddToCart, onRemoveFromCart }}>
+    <CartContext.Provider value={{ cartItems, onAddToCart, onRemoveFromCart, cartTotal }}>
       {children}
     </CartContext.Provider>
   );

@@ -3,7 +3,7 @@ const { AuthenticationError } = require('apollo-server-express');
 
 //bring in the models 
 
-const {User, Category, Order, Product} = require('../models')
+const {User, Category, Order, Product, Brand} = require('../models')
 
 const { signToken } = require('../utils/auth');
 
@@ -29,19 +29,24 @@ const resolvers = {
         category: async(parent, {name}) => {
             return Category.findOne({name:name}).populate('products')
         },
-        products: async (parent, {productId}) => {
-            return Product.find({_id: productId})
+        product: async (parent, {productId}) => {
+            return Product.findOne({_id: productId})
         },
-        product: async() => {
+        products: async() => {
             return Product.find()
         },
         orders: async (parent, {orderId}) => {
-            return Order.find({_id:orderId}).populate('')
+            return Order.findOne({_id:orderId})
         },
         order: async() => {
             return Order.find()
+        },
+        brands: async () => {
+            return Brand.find()
+        },
+        brand: async(parent, {name}) => {
+            return Brand.findOne({name:name}).populate('products')
         }
-
 
     },
 

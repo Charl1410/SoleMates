@@ -20,6 +20,13 @@ const typeDefs = gql`
         createdAt: String
     }
 
+    type Brand {
+        _id: ID
+        name: String
+        createdAt: String
+        products: [Product]!
+    }
+
     type Category{
         _id: ID
         name: String
@@ -48,9 +55,11 @@ const typeDefs = gql`
         categories: [Category]
         category(name:String!):Category
         products: [Product]
-        product(title:String!): Product
+        product(productId: ID!): Product
         orders: [Order]
         order(orderId: ID!): Order
+        brands: [Brand]
+        brand(name: String!): Brand
     }
 
     type Mutation{
@@ -59,5 +68,4 @@ const typeDefs = gql`
         newOrder(customerName: String!, customerAddress:String!, items:String ,total:Int!): Order
     }
 `
-
 module.exports = typeDefs;

@@ -1,10 +1,10 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const categorySchema = new Schema({
+const brandSchema = new Schema({
   name: {
     type: String,
-    required: 'The Category name is required',
+    required: 'The Brand name is required',
     minlength: 1,
     maxlength: 280,
     trim: true,
@@ -20,6 +20,6 @@ const categorySchema = new Schema({
   }
 });
 
-const Category = model('Category', categorySchema);
+const Brand = model('Brand', brandSchema);
 
-module.exports = Category;
+module.exports = Brand;

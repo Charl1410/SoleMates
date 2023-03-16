@@ -28,7 +28,7 @@ const ProductList = () => {
 
   return (
     <>
-      <div className='w-75 border m-2 p-5'>
+      <div className='w-75 border m-2 mt-10 p-5'>
         <h1>All {categoryName}</h1>
         <div className='section-title'>
           {products.map(product => (
