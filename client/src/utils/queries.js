@@ -38,6 +38,21 @@ query Category($name: String!) {
 }
 `;
 
+export const QUERY_SINGLE_BRAND = gql`
+query Brand($name: String!) {
+  brand(name: $name) {
+    name
+    products {
+      _id
+      title
+      description
+      image
+      price
+    }
+  }
+}
+`;
+
 export const QUERY_SINGLE_PRODUCT = gql`
 query Product($productId: ID!) {
   product(productId: $productId) {
@@ -64,18 +79,18 @@ query Products {
 }
 `;
 
-// export const QUERY_ME = gql`
-//   query me {
-//     me {
-//       _id
-//       username
-//       email
-//       thoughts {
-//         _id
-//         thoughtText
-//         thoughtAuthor
-//         createdAt
-//       }
-//     }
-//   }
-// `;
+export const QUERY_ME = gql`
+  query me {
+    me {
+      _id
+      username
+      email
+      thoughts {
+        _id
+        thoughtText
+        thoughtAuthor
+        createdAt
+      }
+    }
+  }
+`;

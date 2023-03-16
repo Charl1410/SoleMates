@@ -54,6 +54,22 @@
       "price": 30,
       "categories": ["Trainers", "For Her"],
       "brand":"Nike"
+    },
+    {
+      "title": "Timberland Allington Lace-Up 6 Inch Boot For Women In Black",
+      "description": "Our classic boot goes to elegant heights in this women's style with comfort features like a padded collar and cushioned footbed built right in. You won't just look good, you'll also feel good that it features eco-conscious materials like responsibly manufactured leather uppers. Timberland supports responsible manufacturing of leather via the Leather Working Group.",
+      "image": "https://images.timberland.com/is/image/TimberlandEU/A1JVB001-hero?wid=720&hei=720&fit=constrain,1&qlt=85,1&op_usm=1,1,6,0",
+      "price": 130,
+      "categories": ["Boots", "For Her"],
+      "brand":"Timberland"
+    },
+    {
+      "title": "Timberland Premium 6 Inch Boot For Men",
+      "description": "This men's 6-inch boot is inspired by our original waterproof boot. This all-season style gives you waterproof performance and our instantly recognisable work-boot design. Other essential features include 400 grams of warm, down-free PrimaLoft® insulation, a padded collar for a comfortable fit around the ankle, a steel shank for arch support, and a rubber lug outsole for traction. Timberland supports responsible manufacturing of leather through the Leather Working Group.",
+      "image": "https://images.timberland.com/is/image/TimberlandEU/A5RE4DH4-alt3?wid=720&hei=720&fit=constrain,1&qlt=85,1&op_usm=1,1,6,0",
+      "price": 190,
+      "categories": ["Boots", "For Him"],
+      "brand":"Timberland"
     }
   ]
   

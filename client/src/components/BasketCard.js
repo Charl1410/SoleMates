@@ -8,7 +8,7 @@ const BasketCard = (props) => {
     <>
 
         <div className="card card-side bg-base-100 shadow-xl m-5">
-        <figure><img src={`${image}`} alt={title} class="w-96"/></figure>
+        <figure><img src={`${image}`} alt={title} className="w-96"/></figure>
         <div className="card-body flex flex-row justify-between">
             <h2 className="card-title "><Link className='text-4xl' to={`/product/${_id}`}>{title}</Link>
             </h2>

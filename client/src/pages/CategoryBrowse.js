@@ -1,15 +1,21 @@
 import React, { useEffect } from "react";
 import Card from "../components/Card";
 import { useQuery } from "@apollo/client";
-import { QUERY_FEATURED_PRODUCTS } from "../utils/queries";
+import { QUERY_SINGLE_CATEGORY } from "../utils/queries";
+import { useParams } from 'react-router-dom';
 
 // Shopping Cart
 import { useCart } from '../context/CartContext'
 
-const Browse = () => {
+const CategoryBrowse = () => {
   const { onAddToCart } = useCart()
-  const { loading, data } = useQuery(QUERY_FEATURED_PRODUCTS);
-  const products = data?.products || [];
+  const { categoryName } = useParams();
+  const { loading, data } = useQuery(QUERY_SINGLE_CATEGORY, {
+    // pass URL parameter
+    variables: { name: categoryName },
+  });
+  const products = data?.category.products || [];
+  console.log(data)
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top of the page
@@ -17,7 +23,7 @@ const Browse = () => {
 
   return (
     <>
-      <div className='w-75 border m-2 mt-10 p-5 h-full'>
+      <div className='w-75 border m-2 p-5'>
         <div className='section-title flex flex-wrap'>
           {products.map(product => (
             <Card key={product.title} {...product} onAddToCart={()=>onAddToCart(product)}/>
@@ -28,4 +34,4 @@ const Browse = () => {
   );
 };
 
-export default Browse;
+export default CategoryBrowse;

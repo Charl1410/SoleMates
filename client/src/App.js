@@ -14,10 +14,12 @@ import Browse from "./pages/Browse";
 import Product from "./pages/Product";
 import Basket from "./pages/Basket";
 import Checkout from "./pages/Checkout";
-import Login from "./pages/LoginPage";
+import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import "./App";
+import CategoryBrowse from "./pages/CategoryBrowse";
+import BrandBrowse from "./pages/BrandBrowse";
 
+import "./App";
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -57,6 +59,8 @@ export default function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/product/:productId" element={<Product />} />
+            <Route path="/browse/:categoryName" element={< CategoryBrowse/>} />
+            <Route path="/browse/brand/:brandName" element={< BrandBrowse/>} />
           </Routes>
         </Layout>
       </Router>
