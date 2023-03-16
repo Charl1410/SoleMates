@@ -60,29 +60,34 @@ const CheckoutForm = () => {
   };
 
   return (
-    <div className="payment-form p-10 pt-20" >
-      <form onSubmit={handlePayment}>
-      <div className="form-row">
-          <label htmlFor="card-number">Address</label>
-        
+        <div className="card ml-5 w-96 bg-base-100 shadow-xl" >
+          <form onSubmit={handlePayment}>
+        <div className="form-row">
+          <label htmlFor="name">Name:  </label>
+          <input type="text" id="name" />
         </div>
         <div className="form-row">
-          <label htmlFor="card-number">NAme</label>
-      
+          <label htmlFor="address">Address:  </label>
+          <input type="text" id="address" />
         </div>
         <div className="form-row">
-          <label htmlFor="card-number">Card Number</label>
+          <label htmlFor="address">Promo Code:  </label>
+          <input type="text" id="promo-code" />
+        </div>
+            <div className="form-row">
+          <label htmlFor="card-number">Card Number:</label>
           <CardNumberElement id="card-number" />
         </div>
         <div className="form-row">
-          <label htmlFor="card-expiry">Expiration Date</label>
+          <label htmlFor="card-expiry">Expiration Date:</label>
           <CardExpiryElement id="card-expiry" />
         </div>
         <div className="form-row">
-          <label htmlFor="card-cvc">CVC</label>
+          <label htmlFor="card-cvc">CVC:</label>
           <CardCvcElement id="card-cvc" />
+          
         </div>
-        <button>Confirm Payment</button>
+        <button class="btn btn-primary">Confirm Payment</button>
       </form>
       {error && <div className="error">{error}</div>}
       {paymentConfirmed && <div className="success">Payment confirmed!</div>}
