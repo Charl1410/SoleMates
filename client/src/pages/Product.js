@@ -15,12 +15,10 @@ const Product = () => {
   });
 
   const product = data?.product || {};
-  const productTitle = loading ? 'Loading Product...' : data?.product.title;
 
   return (
     <>
       <div className='p-5 m-2 mt-10 border w-75'>
-        <h1>{productTitle}</h1>
         <div className='section-title '>
           <SingleProduct
             title={product.title}

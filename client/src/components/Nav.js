@@ -29,9 +29,11 @@ export default function Nav() {
               />
             </svg>
           </label>
-    
-          <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 
+          <ul
+            tabIndex={0}
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
             <li tabIndex={0}>
               <a className="justify-between">
                 Shop Brands
@@ -46,7 +48,6 @@ export default function Nav() {
                 </svg>
               </a>
               <ul className="p-2 bg-white z-10">
-
                 <li>
                   <Link to="/browse/brand/Adidas">Adidas</Link>
                 </li>
@@ -66,11 +67,14 @@ export default function Nav() {
                   <Link to="/browse/brand/Vagabond">Vagabond</Link>
                 </li>
                 <li>
+                  <Link to="/browse/brand/Vans">Vans</Link>
+                </li>
+                <li>
                   <Link to="/browse/brand/Veja">Veja</Link>
                 </li>
               </ul>
             </li>
-          
+
             <li tabIndex={0}>
               <a className="justify-between">
                 Shop Category
@@ -111,15 +115,11 @@ export default function Nav() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-
           <li>
-            <Link to="/login">Log In</Link>
-          </li>
-          <li>
-            <Link to="/signup">Sign Up</Link>
+            <Link to="/browse">Browse All</Link>
           </li>
 
-<li tabIndex={0}>
+          <li tabIndex={0}>
             <a>
               Shop Brands
               <svg
@@ -150,6 +150,9 @@ export default function Nav() {
               </li>
               <li>
                 <Link to="/browse/brand/Vagabond">Vagabond</Link>
+              </li>
+              <li>
+                <Link to="/browse/brand/Vans">Vans</Link>
               </li>
               <li>
                 <Link to="/browse/brand/Veja">Veja</Link>
@@ -191,13 +194,16 @@ export default function Nav() {
         </ul>
       </div>
 
-      <div className="navbar-end">
+      <div className="navbar-end space-x-5">
+        <a>
+          <Link to="/login">Log In</Link>
+        </a>
 
-        
-      <li><a href="/login">Log In</a></li>
+        <a>
+          <Link to="/signup">Sign Up</Link>
+        </a>
 
-<div className="dropdown dropdown-end ">
-
+        <div className="dropdown dropdown-end ">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <div className="indicator">
               <svg
