@@ -39,16 +39,12 @@ query Category($name: String!) {
 `;
 
 export const QUERY_SINGLE_BRAND = gql`
-query Brand($name: String!) {
-  brand(name: $name) {
+query Brands($brandId: ID!) {
+  brand(brandId: $brandId) {
+    _id
     name
-    products {
-      _id
-      title
-      description
-      image
-      price
-    }
+    createdAt
+
   }
 }
 `;

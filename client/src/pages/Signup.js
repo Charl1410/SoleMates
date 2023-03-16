@@ -37,7 +37,16 @@ export default function SignupPage() {
     } catch (e) {
       console.error(e);
     }
+
+      // clear form values
+      setFormState({
+        username: "",
+        email: "",
+        password: "",
+      });
   };
+
+  
 
   return (
     <div className="signup-container">
