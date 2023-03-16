@@ -41,11 +41,11 @@ const resolvers = {
         order: async() => {
             return Order.find()
         },
-        brands: async (parent, {brandId}) => {
-            return Brand.findOne({_id:brandId}).populate('products')
+        brands: async () => {
+            return Brand.find()
         },
-        brand: async() => {
-            return Brand.findOne()
+        brand: async(parent, {name}) => {
+            return Brand.findOne({name:name}).populate('products')
         }
 
     },
