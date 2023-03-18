@@ -61,7 +61,7 @@ const CheckoutForm = () => {
 
   return (
 <div className="card-container w-full flex justify-center items-center">
-        <div className="card w-6/12 bg-base-100 shadow-xl flex justify-center items-center m-10 p-5" >
+        <div className="card bg-neutral-100	 w-6/12 bg-base-100 shadow-xl flex justify-center items-center m-10 p-5" >
               <form onSubmit={handlePayment} className='w-full'>
 
                     <div className="form-row mb-5 ">
@@ -69,12 +69,12 @@ const CheckoutForm = () => {
                       <input placeholder="John" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="name" />
                     </div>
 
-                    <div className="form-row mb-5">
+                    <div className="form-row mb-10">
                       <label htmlFor="address">Promo Code:  </label>
                       <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="promo-code" />
                     </div>
 
-                    <div className="form-row mb-5 border border-blue-900 border-t-1 border-l-0 border-r-0 border-b-0 ">
+                    <div className="form-row mb-5">
                       <label htmlFor="address">Address line 1:  </label>
                       <input placeholder="21 St Johns Close" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="address" />
                     </div>
@@ -92,7 +92,7 @@ const CheckoutForm = () => {
                     </div>
 
 
-                    <div className="form-row mb-5">
+                    <div className="form-row mb-10">
                       <label htmlFor="address">Post Code:  </label>
                       <input placeholder="B93 0FE" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="address" />
                     </div>
