@@ -60,20 +60,22 @@ const CheckoutForm = () => {
   };
 
   return (
-<div className="card-container flex justify-center items-center">
-        <div className="card w-96 bg-base-100 shadow-xl flex justify-center items-center m-10 " >
-              <form onSubmit={handlePayment} className=''>
+<div className="card-container w-11/12 flex justify-center items-center">
+        <div className="card w-screen bg-base-100 shadow-xl flex justify-center items-center m-10 " >
+              <form onSubmit={handlePayment} className='w-9/12'>
                     <div className="form-row mb-5">
-                      <label htmlFor="name">Name:  </label>
-                      <input type="text" id="name" />
+                      <label className='border-solid' placeholder="hello" htmlFor="name">Name:  </label>
+                      <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="name" />
                     </div>
+
                     <div className="form-row mb-5">
                       <label htmlFor="address">Address:  </label>
-                      <input type="text" id="address" />
+                      <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="address" />
                     </div>
+                    
                     <div className="form-row mb-5">
                       <label htmlFor="address">Promo Code:  </label>
-                      <input type="text" id="promo-code" />
+                      <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="promo-code" />
                     </div>
                         <div className="form-row mb-5">
                       <label htmlFor="card-number">Card Number:</label>
@@ -88,7 +90,10 @@ const CheckoutForm = () => {
                       <CardCvcElement id="card-cvc" />
                       
                     </div>
-                    <button class="btn btn-primary m-5">Confirm Payment</button>
+
+                    <div className="flex justify-center items-center"> 
+                      <button class="btn btn-primary m-5">Confirm Payment</button>
+                    </div>
               </form>
 
             {error && <div className="error">{error}</div>}
