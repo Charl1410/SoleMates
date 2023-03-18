@@ -60,8 +60,8 @@ const CheckoutForm = () => {
   };
 
   return (
-<div className="card-container w-full flex justify-center items-center">
-        <div className="card bg-neutral-100	 w-6/12 bg-base-100 shadow-xl flex justify-center items-center m-10 p-5" >
+<div className="card-container bg-neutral-100 w-full flex justify-center items-center">
+        <div className="card  w-6/12 bg-base-100 shadow-xl flex justify-center items-center m-10 p-5" >
               <form onSubmit={handlePayment} className='w-full'>
 
                     <div className="form-row mb-5 ">
