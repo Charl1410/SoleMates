@@ -60,17 +60,17 @@ const CheckoutForm = () => {
   };
 
   return (
-<div className="card-container w-11/12 flex justify-center items-center">
-        <div className="card w-screen bg-base-100 shadow-xl flex justify-center items-center m-10 " >
-              <form onSubmit={handlePayment} className='w-9/12'>
+<div className="card-container w-12/12 flex justify-center items-center">
+        <div className="card w-screen bg-base-100 shadow-xl flex justify-center  m-10 " >
+              <form onSubmit={handlePayment} className='w-5/12'>
                     <div className="form-row mb-5">
                       <label className='border-solid' placeholder="hello" htmlFor="name">Name:  </label>
-                      <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="name" />
+                      <input placeholder="John" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="name" />
                     </div>
 
                     <div className="form-row mb-5">
                       <label htmlFor="address">Address:  </label>
-                      <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="address" />
+                      <input placeholder="21 St Johns Close" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="address" />
                     </div>
                     
                     <div className="form-row mb-5">
@@ -98,7 +98,23 @@ const CheckoutForm = () => {
 
             {error && <div className="error">{error}</div>}
             {paymentConfirmed && <div className="success">Payment confirmed!</div>}
+
+            <form className='w-5/12' >
+
+            <div className="form-row mb-5">
+                      <label htmlFor="address">Address:  </label>
+                      <input placeholder="21 St Johns Close" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="address" />
+                    </div>
+
+
+            </form>
+    
+    
     </div>
+
+   
+
+    
   </div>
   );
 };
