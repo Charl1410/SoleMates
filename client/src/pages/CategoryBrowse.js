@@ -24,7 +24,7 @@ const CategoryBrowse = () => {
   return (
     <>
       <div className='w-75 border m-2 p-5'>
-        <div className='section-title flex flex-wrap'>
+        <div className='section-title flex flex-wrap justify-center items-center'>
           {products.map(product => (
             <Card key={product.title} {...product} onAddToCart={()=>onAddToCart(product)}/>
           ))}
