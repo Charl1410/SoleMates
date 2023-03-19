@@ -59,22 +59,24 @@ const CheckoutForm = () => {
   };
 
   return (
-    <div className="flex flex-auto">
-      <div className="card-container bg-neutral-100 w-full flex justify-center items-center">
-        <div className="card  w-6/12 bg-base-100 shadow-xl flex justify-center items-center m-10 p-5">
-          <p>Total: £{total}</p>
-          <div className="form-row mb-10">
-            <label htmlFor="address">Promo Code: </label>
-            <input
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              type="text"
-              id="promo-code"
-            />
-            <div className="flex justify-center ">
-              <button class="btn btn-primary m-5">Add Promo</button>
-            </div>
+    <div className="flex flex-row">
+      <div className="card-container bg-neutral-100 w-full flex-row justify-center items-center">
+          <div className="flex justify-center items-center text-center">
+              <div className="card w-3/12 bg-base-100 shadow-xl flex justify-center items-center mt-20 p-5">
+                <p className="text-lg mb-2 underline decoration-sky-500">Total: £{total}</p>
+                <div className="form-row">
+                  <label htmlFor="address">Promo Code: </label>
+                  <input placeholder="XXX-XXX-XXX"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    type="text"
+                    id="promo-code"
+                  />
+                  <div className="flex justify-center ">
+                    <button class="btn btn-primary m-5">Add Promo</button>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
 
         <div className="card-container bg-neutral-100 w-full flex justify-center items-center">
           <div className="card  w-6/12 bg-base-100 shadow-xl flex justify-center items-center m-10 p-5">

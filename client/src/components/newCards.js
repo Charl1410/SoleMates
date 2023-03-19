@@ -7,12 +7,14 @@ const newCards = ( props ) => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl m-5 w-80 ">
       <Link to={`/product/${_id}`}>
+        <div className='image-container h-96'>
         <figure>
-          <img src={`${image}`} alt={title} />
+          <img className="h-full" src={`${image}`} alt={title} />
         </figure>
+        </div>
       </Link>
       
-      <div className="card-body card-body flex flex-col justify-center items-center text-center">
+      <div className="card-body p-15 h-60 card-body flex flex-col justify-center items-center text-center">
         <h2 className="card-title">
           <Link to={`/product/${_id}`}>
             {title}
