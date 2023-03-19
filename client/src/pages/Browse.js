@@ -18,7 +18,7 @@ const Browse = () => {
   return (
     <>
       <div className='w-75 border m-2 mt-10 p-5 h-full'>
-        <div className='section-title flex flex-wrap justify-center'>
+        <div className='section-title flex flex-wrap justify-center items-center'>
           {products.map(product => (
             <Card key={product.title} {...product} onAddToCart={()=>onAddToCart(product)}/>
           ))}

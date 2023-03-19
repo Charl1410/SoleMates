@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { Pluralize } from "../utils/textulize";
+import Header from "./HeaderFont";
+
 
 export default function Nav() {
   const { cartItems } = useCart();
@@ -110,7 +112,7 @@ export default function Nav() {
         </div>
         {/* Full sized navbar */}
         <Link className="btn btn-ghost normal-case text-xl" to="/">
-          SOLE MATES
+          <Header />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

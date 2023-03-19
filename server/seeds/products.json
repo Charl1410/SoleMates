@@ -126,6 +126,118 @@
       "price": 85,
       "categories": ["Slippers", "For Her"],
       "brand":"UGG"
+    },
+    {
+      "title": "Vans Sk8-hi Navy",
+      "description": "The Sk8-Hi was introduced in 1978 as Style 38, and showcased the now-iconic Vans Sidestripe on a new, innovative high top silhouette. As only the second model featuring the recognizable marker formerly known as the “jazz stripe,” the Sk8-Hi brought a whole new look to the Vans family. Honoring that first legendary high top, the Sk8-Hi is made with sturdy suede and canvas uppers in a variety of classic and unexpected colorways. This lace-up shoe also includes re-enforced toe caps, supportive padded collars, and signature rubber waffle outsoles.",
+      "image": "https://images.vans.com/is/image/VansEU/VN000D5INVY-HERO?$PDP-FULL-IMAGE$",
+      "price": 75,
+      "categories": ["Trainers", "For Him"],
+      "brand":"Vans"
+    },
+    {
+      "title": "Vans Authentic Stackform Shoe",
+      "description": "The Vans Authentic Stackform Shoes refreshes our iconic low top silhouette with an even chunkier take on the platform aesthetic. Constructed with a 34 mm sidewall height, these platform shoes elevate a classic favourite while bringing a new “Off The Wall” style to your look. Along with flowers on the sides and back, the Authentic Stackforms are finished with sturdy canvas uppers, traditional metal eyelets, and signature rubber waffle outsoles.",
+      "image": "https://images.vans.com/is/image/VansEU/VN0A5JM1W00-HERO?$PDP-FULL-IMAGE$",
+      "price": 100,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Vans"
+    },
+    {
+      "title": "Vans Floral Old Skool Shoe",
+      "description": "First known as the Vans #36, the Old Skool debuted in 1977 with a unique new addition: a random doodle drawn by founder Paul Van Doren, and originally referred to as the “jazz stripe.” Today, the famous Vans Sidestripe has become the unmistakable-and instantly recognizable-hallmark of the Vans brand. Featuring durable suede and canvas uppers with a vintage-inspired floral print, the Floral Old Skool pays homage to our heritage while ensuring that this low top, lace-up shoe remains as iconic as ever. It also includes reinforced toe caps, supportive padded collars, and signature rubber waffle outsoles.",
+      "image": "https://images.vans.com/is/image/VansEU/VN0A5KRFFF1-HERO?$PDP-FULL-IMAGE$",
+      "price": 60,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Vans"
+    },
+    {
+      "title": "Vans Flame Old Skool Shoe",
+      "description": "The Flame Old Skool, the Vans classic skate shoe and first to bare the iconic sidestripe, is a low top lace-up featuring printed canvas and suede uppers, re-enforced toe caps to withstand repeated wear, padded collars for support and flexibility, and signature rubber waffle outsoles.",
+      "image": "https://images.vans.com/is/image/VansEU/VN0A38G1PHN-HERO?$PDP-FULL-IMAGE$",
+      "price": 80,
+      "categories": ["Trainers", "For Him"],
+      "brand":"Vans"
+    },
+    {
+      "title": "Adidas Forum Low Shoes",
+      "description": "Want to see what you're capable of? Lace up these adidas Forum shoes and prepare to find out. A symbol of self-expression since '84, these basketball-inspired trainers are all about pushing limits and seeing what you can achieve with hard work. Honouring the fact that we wouldn't be where we are without others, they show off classic team colours — emphasised further with that terry headband vibe. The crisp white leather upper and pops of colour honour the Forum legacy every time you step out.",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/75aee7eb0fc343d484c9adf30019d225_9366/Forum_Low_Shoes_White_GY8556_01_standard.jpg",
+      "price": 85,
+      "categories": ["Trainers", "For Him"],
+      "brand":"Adidas"
+    },
+    {
+      "title": "Adidas Forum Mid Shoes",
+      "description": "Let's take a moment to honour an icon. Is it the gravity-defying B-ball legend from the '80s? Or perhaps the status shoe that adorned the feet of rappers? Both, in fact. The adidas Forum shoes have dominated the hardwood and the streets, and they're back in a mid top version to take your moves to the next level. Slip into the unmistakable style, now in luxurious coated leather, and flaunt that pure class.",
+      "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/1c0a267a632e45e3abe1acb600270983_9366/Forum_Mid_Shoes_White_FY7939.jpg",
+      "price": 90,
+      "categories": ["Trainers", "For Him"],
+      "brand":"Adidas"
+    },
+    {
+      "title": "Adidas Gazelle Indoor Shoes",
+      "description": "The adidas Gazelle shoes have been an icon since the '60s, originally released as an indoor alternative and then breaking out into everyday culture. Now everyone from football fans to skaters to indie rockers are among their biggest fans. This version gets updated colours on the synthetic upper but keeps the signature gum outsole. Wear them with your favourite sweats or fitted tights to make an iconic look that's all your own.      ",
+      "image": "https://cdn.shopify.com/s/files/1/1213/2346/products/AdidasOriginals_GazelleIndoorShoes_BluePrelovedBlueWhiteGum_03_1440x.progressive.jpg?v=1677771836",
+      "price": 90,
+      "categories": ["Trainers", "For Him"],
+      "brand":"Adidas"
+    },
+    {
+      "title": "Nizza Platform Shoes",
+      "description": "What do skinny jeans and flowy skirts have in common? Both look fantastic with a trendy platform like these adidas Nizza shoes. Step up, step out and give every outfit a little lift. Even if you're just knocking around town.      ",
+      "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/e05ab433db5a48b4abe7abeb000f0a90_9366/Nizza_Platform_Shoes_White_FV5322_01_standard.jpg",
+      "price": 55,
+      "categories": ["Trainers", "For Her"],
+      "brand":"Adidas"
+    },
+    {
+      "title": "Adilette 22 Slides",
+      "description": "For the design of these adidas slides we looked to topographic maps illustrating expeditions to Mars and the dimensional stages of a new planet. And the futuristic vibes don't end there. They're built with material made in part from sugarcane, one step on the road to a more sustainable future. Wear them on diverse terrain from wet to dry.      ",
+      "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/99ac2fdea36e4714bdbaaf4200bcc5ff_9366/Adilette_22_Slides_Brown_HQ4670_01_standard.jpg",
+      "price": 50,
+      "categories": ["Trainers", "For Him"],
+      "brand":"Adidas"
+    },
+    {
+      "title": "Sport Yeah Slide",
+      "description": "A new interpretation of the Fluff You cast in water-resistant foam, the Sport Yeah is perfect for pool days, beach days, and beyond. Functioning as either a sandal or slide with its detachable, logo-print backstrap, this fresh update offers more wearing occasions than ever before.      ",
+      "image": "https://www.ugg.com/dw/image/v2/BCQW_PRD/on/demandware.static/-/Sites-UGG-EMEA-master/default/dw2533d52e/images/transparent/1126811-SSAL_1.jpg?sw=555&sh=571&sm=fit&sfrm=png&bgcolor=f9f9f9",
+      "price": 55,
+      "categories": ["Slippers", "For Her"],
+      "brand":"UGG"
+    },
+    {
+      "title": "Fluff Yeah Camopop Slide",
+      "description": "Combining slipper and sandal into a cozy statement shoe, the Fluff Yeah is as good as it sounds and as soft as it looks. Featuring plush recycled poly faux fur with a lightweight platform to keep things airy, this standout slide pairs perfectly with midi dresses or your favorite jeans. Fluff Yeah Camopop shares its splashy-hued answer to the classic camo print in new iterations of patterns and shapes.      ",
+      "image": "https://www.ugg.com/dw/image/v2/BCQW_PRD/on/demandware.static/-/Sites-UGG-EMEA-master/default/dw2533d52e/images/transparent/1126811-SSAL_1.jpg?sw=555&sh=571&sm=fit&sfrm=png&bgcolor=f9f9f9",
+      "price": 110,
+      "categories": ["Slippers", "For Her"],
+      "brand":"UGG"
+    },
+    {
+      "title": "Classic Mini II Boot",
+      "description": "Our Classic boot was originally worn by surfers to keep warm after early-morning sessions, and has since become iconic for its soft sheepskin and enduring design. The Classic II features two new updates: stain-and-water resistance and a lightweight sole to increase cushioning, durability, and traction. These versatile boots pair well with practically anything – try loose boyfriend jeans and a velvet top.      ",
+      "image": "https://www.ugg.com/dw/image/v2/BCQW_PRD/on/demandware.static/-/Sites-UGG-EMEA-master/default/dw864d3f80/images/gray/1016222-BLK_1.jpg?sw=555&sh=571&sm=fit&sfrm=jpg&bgcolor=f9f9f9",
+      "price": 155,
+      "categories": ["Boots", "For Her"],
+      "brand":"UGG"
+    },
+    {
+      "title": "Bailey Bow II Boot",
+      "description": "We added silky bows to our icon for a sweet, feminine take.Crafted with soft sheepskin, this versatile boot now features two new updates: it's pretreated against water and stains and features our lightweight sole for extra cushioning, durability, and traction. Pair with practically anything, from athleisure wear to flowy dresses.      ",
+      "image": "https://www.ugg.com/dw/image/v2/BCQW_PRD/on/demandware.static/-/Sites-UGG-EMEA-master/default/dwdc5c2b83/images/gray/1016225-GRY_4.jpg?sw=555&sh=571&sm=fit&sfrm=jpg&bgcolor=f9f9f9",
+      "price": 195,
+      "categories": ["Boots", "For Her"],
+      "brand":"UGG"
+    },
+    {
+      "title": "Yarrow Canvas Wedge",
+      "description": "Crafted from rich suede and smooth canvas with a convenient zipper in the back for easy on and off, this leg-lengthening wedge sandal makes a summery statement with its espadrille-inspired jute wrap and elegant ankle bow. Adding a durable rubber outsole for traction, the Yarrow is equal parts fashion and function.      ",
+      "image": "https://www.ugg.com/dw/image/v2/BCQW_PRD/on/demandware.static/-/Sites-UGG-EMEA-master/default/dwaaf742fc/images/gray/1117353-NCNV_1.jpg?sw=555&sh=571&sm=fit&sfrm=jpg&bgcolor=f9f9f9",
+      "price": 100,
+      "categories": ["Heels", "For Her"],
+      "brand":"UGG"
     }
   ]
   
