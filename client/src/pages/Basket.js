@@ -19,8 +19,8 @@ const Basket = () => {
   
   return (
     <>
-    <div className="basket-page-container h-screen">
-        <div className='w-75 border m-2 mt-10 p-5'>
+    <div className="basket-page-container">
+        <div className='w-screen border m-2 mt-10 p-5'>
         <h1 class="text-4xl font-extrabold dark:text-white text-center m-5" >Your Basket</h1>
 
 
@@ -30,13 +30,15 @@ const Basket = () => {
             ))}
           </div>
         </div>  
-        <div className='w-25 border m-2 p-5'>
+       
+      </div>
+
+      <div className='w-25 border m-2 p-5'>
           <div className='section-title'>
               Checkout Options
           </div>
           <CheckoutLinks total={total} />
         </div>
-      </div>
     </>
   )
 }
