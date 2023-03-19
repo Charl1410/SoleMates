@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import Header from "./HeaderFont";
+import Heroheader from '../components/WhiteHeroHeader'
 
 
 export default function Hero () {
@@ -8,7 +10,7 @@ export default function Hero () {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Sole Mates</h1>
+      <Heroheader />
       <p className="mb-5">Welcome to Sole Mates where you can buy all your favourite brands </p>
       <Link to="/browse">
         <button className="btn btn-secondary animate-bounce">Browse All</button>
