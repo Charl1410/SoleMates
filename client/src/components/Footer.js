@@ -3,7 +3,7 @@ import Logo from '../components/Logo'
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+    <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-auto">
   <div className="grid grid-flow-col gap-4">
     <a className="link link-hover">About us</a> 
     <a className="link link-hover">Contact</a> 
@@ -22,7 +22,7 @@ export default function Footer() {
     </div>
   </div> 
   <div>
-    <p>Copyright © 2023 - All right reserved by Team BBQ chicken</p>
+    <p>Copyright © 2023 - All right reserved by Team BBQ Chicken</p>
   </div>
 </footer>
   );

@@ -3,9 +3,16 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { Pluralize } from "../utils/textulize";
 import Header from "./HeaderFont";
+import Auth from '../utils/auth';
 
 
 export default function Nav() {
+
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+
   const { cartItems } = useCart();
   const total = cartItems.reduce((acc, item) => acc + item.price, 0);
   return (
@@ -196,14 +203,36 @@ export default function Nav() {
         </ul>
       </div>
 
-      <div className="navbar-end space-x-5">
-        <a>
+      
+    <div className="navbar-end space-x-5">
+      {Auth.loggedIn() ? (
+          <>
+           <Link className="text-sm m-2" to="/me">
+              {Auth.getProfile().data.username}
+            </Link>
+            <button className="text-sm m-2" onClick={logout}>
+              Logout
+            </button>
+          </>
+      ) : (
+        <>
+        <Link className="m-2 text-sm" to="/login">
+          Login
+        </Link>
+        |
+        <Link className="m-2 text-sm" to="/signup">
+          Signup
+        </Link>
+        </>
+      )}
+      
+        {/* <a>
           <Link to="/login">Log In</Link>
         </a>
 
         <a>
           <Link to="/signup">Sign Up</Link>
-        </a>
+        </a> */}
 
         <div className="dropdown dropdown-end ">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
