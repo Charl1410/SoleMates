@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from '../components/Logo'
 
 export default function Footer() {
   return (
@@ -17,7 +18,7 @@ export default function Footer() {
     </div>
 
     <div>
-      <img src="../../public/logo.png" alt="logo"></img>
+      <Logo />
     </div>
   </div> 
   <div>
