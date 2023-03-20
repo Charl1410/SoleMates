@@ -26,13 +26,15 @@ All dependencies should already be in the package.json file and installed throug
 To run up the project locally after installing dependencies, run `npm run seed` to run up and seed the database and then `npm run develop` to run up the front an back end. View the project on https://localhost:3000.
 
 ## Screenshots
-![]()
-![]()
-![]()
-![]()
-![]()
+![](https://github.com/Charl1410/SoleMates/blob/a5a9a71b3302a950c3178c27bf3ae10d83dfaa28/screenshots/Screenshot%202023-03-20%20at%2013.08.37.png)
 
+![](https://github.com/Charl1410/SoleMates/blob/a5a9a71b3302a950c3178c27bf3ae10d83dfaa28/screenshots/Screenshot%202023-03-19%20at%2016.41.21.png)
 
+![](https://github.com/Charl1410/SoleMates/blob/a5a9a71b3302a950c3178c27bf3ae10d83dfaa28/screenshots/Screenshot%202023-03-19%20at%2016.42.11.png)
+
+![](https://github.com/Charl1410/SoleMates/blob/a5a9a71b3302a950c3178c27bf3ae10d83dfaa28/screenshots/Screenshot%202023-03-19%20at%2016.42.03.png)
+
+![](https://github.com/Charl1410/SoleMates/blob/a5a9a71b3302a950c3178c27bf3ae10d83dfaa28/screenshots/Screenshot%202023-03-19%20at%2016.41.41.png)
 
 ## Contributors
 * [Charlotte Griffin](https://github.com/Charl1410)
