@@ -191,7 +191,6 @@ export default function SignupPage() {
                       d="M10 19l-7-7m0 0l7-7m-7 7h18"
                     />
                   </svg>
-                  <span className="inline-block ml-1">Back to your-app.com</span>
                 </button>
               </div>
             </div>
