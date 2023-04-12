@@ -1,6 +1,6 @@
 # SoleMates 
 
-Put deployed link here!
+https://sole-mates.herokuapp.com/
 
  ## Table of contents
 
